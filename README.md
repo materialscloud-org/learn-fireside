@@ -41,10 +41,10 @@ In exercises 6 and 7 you will compute a series of mechanical properties of a mat
 1. [Cutoff convergence vs Total energy](1_basic_convergence_ecut_vs_etot/README.md)
 2. [Cutoff convergence vs Forces](2_basic_convergence_ecut_vs_forces/README.md)
 3. [K-points convergence vs Total energy](3_basic_convergence_kpt_vs_etot/README.md)
-4. [K-points convergence vs Forces](4_basic_convergence_kpt_vs_forcs/README.md)
+4. [K-points convergence vs Forces](4_basic_convergence_kpt_vs_forces/README.md)
 5. [Cutoff convergence vs energy differences](5_basic_convergence_ecut_vs_ediff/README.md)
-6. [Lattice parameter](1mechanical_properties_lattice_param/README.md)
-7. [Elastic constants](2mechanical_properties_elastic_constants/README.md)
+6. [Lattice parameter](6_mechanical_properties_lattice_param/README.md)
+7. [Elastic constants](7_mechanical_properties_elastic_constants/README.md)
 
 ## Bibliography
 1. P. Giannozzi, S. Baroni, N. Bonini, M. Calandra, R. Car, C. Cavazzoni, D. Ceresoli, G. L. Chiarotti, M. Cococcioni, I. Dabo, et al., Journal of physics: Condensed matter 21, 395502 (2009).
