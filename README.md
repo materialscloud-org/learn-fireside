@@ -1,11 +1,11 @@
 # learn-fireside
 
-This is a tutorial for Density Functional Theory(DFT) calculation using [Quantum Espresso](https://www.quantum-espresso.org/)(QE)[1,2]
+This is a tutorial for Density Functional Theory(DFT) calculation using [Quantum ESPRESSO](https://www.quantum-espresso.org/)(QE)[1,2]
 
 In each subfolder you will find the required material to run the example exercise and the instruction as a README.md file which can be viewed directly from github
 
-- 1 : [Basic convergence tests](1_basic_convergencies/README.md)
-- 2 : [Mechanical properties](2_mechanical_properties/README.md)
+1. [Basic convergence tests](1_basic_convergence/README.md)
+2. [Mechanical properties](2_mechanical_properties/README.md)
 
 All codes required to run the examples are already installed within the provided virtual machine (VM).  
 The SSSP pseudopotentials (PPs) files required to run the exercises can be found on [Materials Cloud](https://www.materialscloud.org/discover/sssp/table/efficiency#sssp-license).
