@@ -6,7 +6,7 @@ Similarly to the [exercise 1.2](../2_ecut_vs_forces), we are going to calculate 
 
 ## Example exercise
 
-1. Download the [provided input files](../../files/Na.scf.in)
+1. Download the [provided input files](../../files/NaCl.scf.in)
 2. Copy or link the pseudopotential files for Na and Cl inside a folder named ```pseudo``` in the same path of the input file
 2. Copy or link the pseudopotential files for Na and Cl inside a folder named ```pseudo``` in the same path of the input file
 3. Modify the input file to use the converged cutoff you obtained in either problem 1.1 or 1.2
@@ -19,3 +19,5 @@ Similarly to the [exercise 1.2](../2_ecut_vs_forces), we are going to calculate 
 
 
 TIP: You can modify the [bash script](../../files/script.sh) provided in this repository to automate this process or write your own script in any scripting language.
+
+[BACK TO INDEX](../README.md)

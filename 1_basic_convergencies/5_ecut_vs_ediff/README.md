@@ -15,7 +15,7 @@ This value for this threshold is chosen depending on the accuracy of the results
 
 ## Example exercise
 
-1. Download the [provided input files](../../files/Na.scf.in)
+1. Download the [provided input files](../../files/NaCl.scf.in)
 2. Copy or link the pseudopotential files for Na and Cl inside a folder named ```pseudo``` in the same path of the input file
 3. Create a copy of the input file with a different name where you will change the value of the lattice parameter ```celldm(1)``` to be 1% smaller than the previous one.
 3. Run the code pw.x from terminal using the command ```pw.x < INPUT_NAME > OUTPUT_NAME``` for bot files
@@ -26,3 +26,5 @@ This value for this threshold is chosen depending on the accuracy of the results
 7. Compare the converged cutoff value that you obtained in [exercise 1.1](../1_ecut_vs_etot) with respect to the one in this exercise.
 
 TIP: You can modify the [bash script](../../files/script.sh) provided in this repository to automate this process or write your own script in any scripting language.
+
+[BACK TO INDEX](../README.md)
