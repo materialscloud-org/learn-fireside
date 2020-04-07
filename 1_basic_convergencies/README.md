@@ -5,6 +5,10 @@ When running DFT calculations, several approximation have to be present in order
 In order to determine whether the accuracy of the desired results is being affected by these approximations, a series of convergence tests has to be performed.  
 The basic idea behind them is to vary a parameter inherent to the accuracy of our calculation and observe how certain quantities vary with it. When these variations are below a threshold that represent the desired output accuracy, we say that our calculation is "converged" with respect to that parameter.
 
+You might rightfully ask: "Why compromise at all and not use extremely high values for this parameters?". The answer to this is TIME.  
+You will notice while doing the exercises that an higher value of a convergence parameter will also result in an longer execution time of your code.
+Computational resources have a cost and most importantly are usually limited, hence you always want to aim to squeeze all the possible calculation out of them, while still obtaining physically relevant results.
+
 For more details on what are each approximations, refer to the documentation of each subsection.
 
 - 1: [Cutoff convergence vs Total energy](1_ecut_vs_etot/README.md)
