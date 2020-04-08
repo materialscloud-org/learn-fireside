@@ -38,6 +38,7 @@ In exercises 6 and 7 you will compute a series of mechanical properties of a mat
 
 # Exercises
 
+0. [Launching a PWscf calculation](0_initial_tests/README.md)
 1. [Cutoff convergence vs Total energy](1_basic_convergence_ecut_vs_etot/README.md)
 2. [Cutoff convergence vs Forces](2_basic_convergence_ecut_vs_forces/README.md)
 3. [K-points convergence vs Total energy](3_basic_convergence_kpt_vs_etot/README.md)
