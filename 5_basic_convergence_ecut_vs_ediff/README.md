@@ -15,15 +15,18 @@ This value for this threshold is chosen depending on the accuracy of the results
 
 ## Example exercise
 
-1. Download the [provided input files](../files/NaCl.scf.in)
-2. Copy or link the pseudopotential files for Na and Cl inside a folder named ```pseudo``` in the same path of the input file
+1. Copy the [provided input files](../files/NaCl.scf.in) into this folder  
+  ```cp ../files/NaCl.scf.in .```
+2. Copy or link the pseudopotential files for Na and Cl inside a folder named ```pseudo``` in the same path of the input file  
+  ```cp -r ../files/pseudo/ .```
 3. Create a copy of the input file with a different name where you will change the value of the lattice parameter ```celldm(1)``` to be 1% smaller than the previous one.
-3. Run the code pw.x from terminal using the command ```pw.x < INPUT_NAME > OUTPUT_NAME``` for bot files
-4. Collect the total energy from the output files (It can be found close to the end, with a line starting with an exclamation mark)
+4. Run the code pw.x from terminal using the command following command for both files  
+  ```pw.x < INPUT_NAME > OUTPUT_NAME```
+5. Collect the total energy from the output files (It can be found close to the end, with a line starting with an exclamation mark)
   As a tip, you can use ```grep ! *.out``` to quickly get all lines with an exclamation mark from all files ending in ```.out```
-5. Increase the value of ```ecutwfc``` by 10 Ry and the value of ```ecutrho``` by 80 Ry in both the input file.
-6. Repeat points 3 through 5 until a convergence of 5 meV/atom is achieved.
-7. Compare the converged cutoff value that you obtained in [exercise 1.1](../1_ecut_vs_etot) with respect to the one in this exercise.
+6. Increase the value of ```ecutwfc``` by 10 Ry and the value of ```ecutrho``` by 80 Ry in both the input file.
+7. Repeat points 4 through 6 until a convergence of 5 meV/atom is achieved.
+8. Compare the converged cutoff value that you obtained in [exercise 1.1](../1_ecut_vs_etot) with respect to the one in this exercise.
 
 TIP: You can modify the [bash script](../files/script.sh) provided in this repository to automate this process or write your own script in any scripting language.
 

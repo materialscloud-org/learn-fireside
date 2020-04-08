@@ -13,12 +13,15 @@ Please take note of a few differences from the previous exercises:
 
 ## Example exercise
 
-1. Download the [provided input files](../files/NaCl.supercell.relax.in)
-2. Copy or link the pseudopotential files for Na and Cl inside a folder named ```pseudo``` in the same path of the input file
+1. Copy the [provided input files](../files/NaCl.scf.in) into this folder  
+  ```cp ../files/NaCl.scf.in .```
+2. Copy or link the pseudopotential files for Na and Cl inside a folder named ```pseudo``` in the same path of the input file  
+  ```cp -r ../files/pseudo/ .```
 3. Modify the input file to use the converged parameters you obtained in the previous section.
   As stated in the introduction, the convergence requirement on the kpoints will be lower since we are using a supercell.  
   Also we suggest using a slightly reduced cutoff and/or increase the number of virtual cores assigned to the virtual machine see [handouts](../files/handouts.pdf) section XXXXXX, in order to be able to run this exercise in a reasonable time.
-4. Run the code pw.x from terminal using the command ```pw.x < Na.supercell.relax.in > Na.supercell.relax.out```
+4. Run the code pw.x from terminal using the command  
+  ```pw.x < Na.supercell.relax.in > Na.supercell.relax.out```
 5. Collect the total energy from the output file (It can be found close to the end, with a line starting with an exclamation mark)  
   NOTE: while the values of the total energy are still identifiable by an exclamation mark in the output, there will be several occurrences, one for each 'scf' iteration in the 'relax' cycle.
   Take care to record the last of this values which corresponds to the relaxed structure.

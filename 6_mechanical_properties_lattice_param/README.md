@@ -6,10 +6,13 @@ All this is performed by the post-processing code ```ev.x``` provided in Quantum
 
 ## Example exercise
 
-1. Download the [provided input files](../files/NaCl.scf.in)
-2. Copy or link the pseudopotential files for Na and Cl inside a folder named ```pseudo``` in the same path of the input file
+1. Copy the [provided input files](../files/NaCl.scf.in) into this folder  
+  ```cp ../files/NaCl.scf.in .```
+2. Copy or link the pseudopotential files for Na and Cl inside a folder named ```pseudo``` in the same path of the input file  
+  ```cp -r ../files/pseudo/ .```
 3. Modify the input file to use the converged cutoff and kpoint mesh you obtained in the previous section.
-4. Run the code pw.x from terminal using the command ```pw.x < Na.scf.in > Na.scf.out```
+4. Run the code pw.x from terminal using the command  
+  ```pw.x < Na.scf.in > Na.scf.out```
 5. Collect the total energy from the output file (It can be found close to the end, with a line starting with an exclamation mark)
   As a tip, you can use ```grep ! *.out``` to quickly get all lines with an exclamation mark from all files ending in ```.out```
 6. Modify the lattice parameter ```celldm(1)```

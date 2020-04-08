@@ -8,10 +8,13 @@ In order to actually have forces on the atoms, we have to move one atome slightl
 
 ## Example exercise
 
-1. Download the [provided input files](../files/NaCl.scf.in)
-2. Copy or link the pseudopotential files for Na and Cl inside a folder named ```pseudo``` in the same path of the input file
+1. Copy the [provided input files](../files/NaCl.scf.in) into this folder  
+  ```cp ../files/NaCl.scf.in .```
+2. Copy or link the pseudopotential files for Na and Cl inside a folder named ```pseudo``` in the same path of the input file  
+  ```cp -r ../files/pseudo/ .```
 3. Modify the input file to use a 4x4x4 grid and shift one of the two atoms along the ```z``` dirction by 0.05
-4. Run the code pw.x from terminal using the command ```pw.x < Na.scf.in > Na.scf.out```
+4. Run the code pw.x from terminal using the command  
+  ```pw.x < Na.scf.in > Na.scf.out```
 5. Collect the value of the forces acting on the two atoms (you expect to have the x and y components equal to 0 and that fz_Na = - fz_Cl).
   The lines containing this information in the output file will look like this:  
   ```atom    1 type  1   force =     0.00000000    0.00000000    0.02365046```
