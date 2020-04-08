@@ -6,6 +6,8 @@ In our case the k-space is discretized using a [Monkhorst-Pack grid](https://doi
 
 The question that we aim to answer with the following test is "how many points are enought to properly describe my system within a certain threshold?"
 
+For a more complete description, please refer to the [handouts](../files/handouts.pdf) sec XXXXXXX.
+
 ## Convergence test
 
 In the following test we are going to observe how the total energy of the systems changes when increasing the number of kpoints by changing the dimension of the Monkhorst-Pack grid.
