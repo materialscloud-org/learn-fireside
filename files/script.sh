@@ -70,17 +70,16 @@ EOF
       # Run PWscf to create new output file:
       $PW_LAUNCH < $OUT_DIR/$INPUT > $OUT_DIR/$OUTPUT
 
-      # Uncomment this lines by removing the leadings # to automatically store relevant data in a SAVE.txt file
-      # E_TOT=$(cat $OUT_DIR/$OUTPUT | grep ! | tr -dc '[0-9]\.\-\n')
-      # NKPT=$(cat $OUT_DIR/$OUTPUT | grep "number of k points=" | tr -dc '[0-9]\.\-\n')
-      # F1_x=$(cat $OUT_DIR/$OUTPUT | grep " atom    1 type  1   force" | cut -d= -f2 | tr -dc '[0-9]\.\-\n ' | tr -s ' ' | cut -d' ' -f2)
-      # F1_y=$(cat $OUT_DIR/$OUTPUT | grep " atom    1 type  1   force" | cut -d= -f2 | tr -dc '[0-9]\.\-\n ' | tr -s ' ' | cut -d' ' -f3)
-      # F1_z=$(cat $OUT_DIR/$OUTPUT | grep " atom    1 type  1   force" | cut -d= -f2 | tr -dc '[0-9]\.\-\n ' | tr -s ' ' | cut -d' ' -f4)
-      # F2_x=$(cat $OUT_DIR/$OUTPUT | grep " atom    2 type  2   force" | cut -d= -f2 | tr -dc '[0-9]\.\-\n ' | tr -s ' ' | cut -d' ' -f2)
-      # F2_y=$(cat $OUT_DIR/$OUTPUT | grep " atom    2 type  2   force" | cut -d= -f2 | tr -dc '[0-9]\.\-\n ' | tr -s ' ' | cut -d' ' -f3)
-      # F2_z=$(cat $OUT_DIR/$OUTPUT | grep " atom    2 type  2   force" | cut -d= -f2 | tr -dc '[0-9]\.\-\n ' | tr -s ' ' | cut -d' ' -f4)
+      E_TOT=$(cat $OUT_DIR/$OUTPUT | grep ! | tr -dc '[0-9]\.\-\n')
+      NKPT=$(cat $OUT_DIR/$OUTPUT | grep "number of k points=" | tr -dc '[0-9]\.\-\n')
+      F1_x=$(cat $OUT_DIR/$OUTPUT | grep " atom    1 type  1   force" | cut -d= -f2 | tr -dc '[0-9]\.\-\n ' | tr -s ' ' | cut -d' ' -f2)
+      F1_y=$(cat $OUT_DIR/$OUTPUT | grep " atom    1 type  1   force" | cut -d= -f2 | tr -dc '[0-9]\.\-\n ' | tr -s ' ' | cut -d' ' -f3)
+      F1_z=$(cat $OUT_DIR/$OUTPUT | grep " atom    1 type  1   force" | cut -d= -f2 | tr -dc '[0-9]\.\-\n ' | tr -s ' ' | cut -d' ' -f4)
+      F2_x=$(cat $OUT_DIR/$OUTPUT | grep " atom    2 type  2   force" | cut -d= -f2 | tr -dc '[0-9]\.\-\n ' | tr -s ' ' | cut -d' ' -f2)
+      F2_y=$(cat $OUT_DIR/$OUTPUT | grep " atom    2 type  2   force" | cut -d= -f2 | tr -dc '[0-9]\.\-\n ' | tr -s ' ' | cut -d' ' -f3)
+      F2_z=$(cat $OUT_DIR/$OUTPUT | grep " atom    2 type  2   force" | cut -d= -f2 | tr -dc '[0-9]\.\-\n ' | tr -s ' ' | cut -d' ' -f4)
 
-      # echo "`printf "%11.4f %10.1f %8d %15.6f %9.6f %9.6f %9.6f %9.6f %9.6f %9.6f" $a $ecut $NKPT $E_TOT $F1_z $F1_y $F1_z $F2_x $F2_y $F2_z`" >> $SAVE
+      echo "`printf "%11.4f %10.1f %8d %15.6f %9.6f %9.6f %9.6f %9.6f %9.6f %9.6f" $a $ecut $NKPT $E_TOT $F1_z $F1_y $F1_z $F2_x $F2_y $F2_z`" >> $SAVE
 
       # Finish loops on plane-wave cutoffs, k-point grids, and lattice constants:
       done
