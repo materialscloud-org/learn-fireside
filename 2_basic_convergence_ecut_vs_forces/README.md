@@ -8,7 +8,7 @@ In order to actually have forces on the atoms, we have to move one atome slightl
 
 ## Example exercise
 
-1. Download the [provided input files](../../files/NaCl.scf.in)
+1. Download the [provided input files](../files/NaCl.scf.in)
 2. Copy or link the pseudopotential files for Na and Cl inside a folder named ```pseudo``` in the same path of the input file
 3. Modify the input file to use a 4x4x4 grid and shift one of the two atoms along the ```z``` dirction by 0.05
 4. Run the code pw.x from terminal using the command ```pw.x < Na.scf.in > Na.scf.out```
@@ -18,6 +18,6 @@ In order to actually have forces on the atoms, we have to move one atome slightl
 6. Increase the value of ```ecutwfc``` by 10 Ry and the value of ```ecutrho``` by 80 Ry in the input file.
 7. Repeat points 4 through 6 until a convergence of 10 meV/Angstrom is achieved.
 
-TIP: You can modify the [bash script](../../files/script.sh) provided in this repository to automate this process or write your own script in any scripting language.
+TIP: You can modify the [bash script](../files/script.sh) provided in this repository to automate this process or write your own script in any scripting language.
 
 [BACK TO INDEX](../README.md)

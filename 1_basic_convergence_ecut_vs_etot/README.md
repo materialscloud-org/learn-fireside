@@ -16,7 +16,7 @@ This value for this threshold is chosen depending on the accuracy of the results
 
 ## Example exercise
 
-1. Download the [provided input files](../../files/NaCl.scf.in)
+1. Download the [provided input files](../files/NaCl.scf.in)
 2. Copy or link the pseudopotential files for Na and Cl inside a folder named ```pseudo``` in the same path of the input file
 3. Run the code pw.x from terminal using the command ```pw.x < Na.scf.in > Na.scf.out```
 4. Collect the total energy from the output file (It can be found close to the end, with a line starting with an exclamation mark)
@@ -24,6 +24,6 @@ This value for this threshold is chosen depending on the accuracy of the results
 5. Increase the value of ```ecutwfc``` by 10 Ry and the value of ```ecutrho``` by 80 Ry in the input file.
 6. Repeat points 3 through 5 until a convergence of 5 meV/atom is achieved.
 
-TIP: You can modify the [bash script](../../files/script.sh) provided in this repository to automate this process or write your own script in any scripting language.
+TIP: You can modify the [bash script](../files/script.sh) provided in this repository to automate this process or write your own script in any scripting language.
 
 [BACK TO INDEX](../README.md)

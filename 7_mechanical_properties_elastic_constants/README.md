@@ -13,7 +13,7 @@ Please take note of a few differences from the previous exercises:
 
 ## Example exercise
 
-1. Download the [provided input files](../../files/NaCl.supercell.relax.in)
+1. Download the [provided input files](../files/NaCl.supercell.relax.in)
 2. Copy or link the pseudopotential files for Na and Cl inside a folder named ```pseudo``` in the same path of the input file
 3. Modify the input file to use the converged parameters you obtained in the previous section.
   As stated in the introduction, the convergence requirement on the kpoints will be lower since we are using a supercell.  
