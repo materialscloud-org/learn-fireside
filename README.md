@@ -5,8 +5,7 @@ This is a tutorial for density-functional theory (DFT) calculations using the op
 In each subfolder you will find the required instructions to run the example exercise.  
 All the required input and pseudopotential files can be found under the ```files``` folder.
 
-The SSSP pseudopotentials (PPs) files can be downloaded from the [Materials Cloud (https://www.materialscloud.org/discover/sssp/table/efficiency#sssp-license). Other sites providing PPs are [pseudodojo](http://www.pseudo-dojo.org/) and [Quantum ESPRESSO website](https://www.quantum-espresso.org/pseudopotentials).  
-The input files required to run the calculations are provided within this repository.
+The SSSP pseudopotentials (PPs) files can be downloaded from the [Materials Cloud (https://www.materialscloud.org/discover/sssp/table/efficiency#sssp-license). Other sites providing PPs are [pseudodojo](http://www.pseudo-dojo.org/) and [Quantum ESPRESSO website](https://www.quantum-espresso.org/pseudopotentials). The input files required to run the calculations are provided within this repository.
 
 All codes required to run the examples are already installed in the Quantum Mobile (see below), a virtual machine (VM) that can run on any Windows, Mac, or Linux laptop/desktop. Both the codes and Quantum Mobile are open source. 
 
