@@ -1,34 +1,28 @@
 # learn-fireside
 
-This is a tutorial for Density Functional Theory(DFT) calculation using [Quantum ESPRESSO](https://www.quantum-espresso.org/)(QE)[1,2]
+This is a tutorial for density-functional theory (DFT) calculations using the open-source [Quantum ESPRESSO] distribution (https://www.quantum-espresso.org/)(QE)[1,2].
 
-In each subfolder you will find the required instruction to run the example exercise.  
+In each subfolder you will find the required instructions to run the example exercise.  
 All the required input and pseudopotential files can be found under the ```files``` folder.
 
-All codes required to run the examples are already installed within the provided virtual machine (VM).  
-The SSSP pseudopotentials (PPs) files can be acquired from [Materials Cloud](https://www.materialscloud.org/discover/sssp/table/efficiency#sssp-license).
-Other sites providing PPs are [pseudodojo](http://www.pseudo-dojo.org/) and [Quantum ESPRESSO website](https://www.quantum-espresso.org/pseudopotentials).  
+The SSSP pseudopotentials (PPs) files can be downloaded from the [Materials Cloud (https://www.materialscloud.org/discover/sssp/table/efficiency#sssp-license). Other sites providing PPs are [pseudodojo](http://www.pseudo-dojo.org/) and [Quantum ESPRESSO website](https://www.quantum-espresso.org/pseudopotentials).  
 The input files required to run the calculations are provided within this repository.
+
+All codes required to run the examples are already installed in the Quantum Mobile (see below), a virtual machine (VM) that can run on any Windows, Mac, or Linux laptop/desktop. Both the codes and Quantum Mobile are open source. 
 
 # Using the Quantum Mobile Virtual Machine
 
-The setup of the VM requires you to download the latest [Quantum Mobile image](https://github.com/marvel-nccr/quantum-mobile/releases/) and VBox version 6.1.  
-In order to import the image inside VBox, please refer to [this documentation](https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html)
+The setup of the Quantum Mobile requires you to download the [Quantum Mobile image](https://github.com/marvel-nccr/quantum-mobile/releases/) (we use the v20.03.1 release) and the open-source Virtual Box (VBox) virtualizaton software.   In order to import the image inside VBox, please refer to [this documentation](https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html)
 
-NOTE: If you are running this tutorial on a laptop, beware that some manufacturers disable the Virtualization technology on a BIOS level. While the feature can be reactivated, we would advise against doing it yourself unless you know what you are doing.
+NOTE: If you are running this tutorial on a laptop, beware that some manufacturers disable the Virtualization technology at the BIOS level. This feature can be reactivated, but we would advise against doing it yourself unless you know exactly what you are doing, and it might be wiser to install Quantum ESPRESSO natively on your machine - for this, see instructions at https://www.quantum-espresso.org/Doc/user_guide.pdf
 
 # Convergence tests
 
-In exercises 1 through 5 you will perform a series of basic convergence tests on certain input parameters.
+In exercises 1 through 5 you will perform a series of basic convergence tests on the core computational input parameters for a proper DFT calculations.
 
-When running DFT calculations, several approximation have to be present in order to run the code on a computer.
+In particular, in order to determine whether the accuracy of the desired results is being affected by your numerical approximations, a series of convergence tests has to be performed. The basic idea behind them is to vary a parameter inherent to the accuracy of the calculation and monitor how certain quantities vary with it. When these variations are below a threshold that represent the desired output accuracy, we say that our calculation is "converged" with respect to that parameter.
 
-In order to determine whether the accuracy of the desired results is being affected by these approximations, a series of convergence tests has to be performed.  
-The basic idea behind them is to vary a parameter inherent to the accuracy of our calculation and observe how certain quantities vary with it. When these variations are below a threshold that represent the desired output accuracy, we say that our calculation is "converged" with respect to that parameter.
-
-You might rightfully ask: "Why compromise at all and not use extremely high values for this parameters?". The answer to this is TIME.  
-You will notice while doing the exercises that an higher value of a convergence parameter will also result in an longer execution time of your code.
-Computational resources have a cost and most importantly are usually limited, hence you always want to aim to squeeze all the possible calculation out of them, while still obtaining physically relevant results.
+You might rightfully ask: "Why compromise at all and not use extremely high values for all the parameters?". The answer to this is TIME, and MEMORY. You will notice while doing the exercises that a higher value of a convergence parameter will also result in an longer execution time of your code. Computational resources have a cost and most importantly are usually limited, hence you always want to aim to have physically relevant results at the minimum meaningful cost.
 
 For more details on each approximation, refer to the documentation of each subsection and the [handouts](files/handouts.pdf).
 
