@@ -1,4 +1,4 @@
-# K-point mesh convergence vs Total energy
+# Convergence of the total (absolute) energies with respect to the size of the k-points mesh
 
 Another approximation, carried out for the sake of computational implementation, is the discretization of the reciprocal space.
 When calculating an integral on a computer, the typical approach is to discretize the space and transform it into a summation over a set of point.  
@@ -6,7 +6,7 @@ In our case the k-space is discretized using a [Monkhorst-Pack grid](https://doi
 
 The question that we aim to answer with the following test is "how many points are enought to properly describe my system within a certain threshold?"
 
-For a more complete description, please refer to the [handouts](../files/handouts.pdf) sec XXXXXXX.
+For a more complete description, please refer to the [handouts](../../files/handouts.pdf) sec 1.5.2.
 
 ## Convergence test
 
@@ -14,10 +14,10 @@ In the following test we are going to observe how the total energy of the system
 
 ## Example exercise
 
-1. Copy the [provided input files](../files/NaCl.scf.in) into this folder  
-  ```cp ../files/NaCl.scf.in .```
+1. Copy the [provided input files](../../files/NaCl.scf.in) into this folder  
+  ```cp ../../files/NaCl.scf.in .```
 2. Copy or link the pseudopotential files for Na and Cl inside a folder named ```pseudo``` in the same path of the input file  
-  ```cp -r ../files/pseudo/ .```
+  ```cp -r ../../files/pseudo/ .```
 3. Modify the input file to use the converged cutoff you obtained in either problem 1.1 or 1.2
 4. Run the code pw.x from terminal using the command  
   ```pw.x < Na.scf.in > Na.scf.out```
@@ -26,6 +26,6 @@ In the following test we are going to observe how the total energy of the system
 6. Increase the size of the kpoint grid by steps of 2 (e.g.  2x2x2 -> 4x4x4 -> 8x8x8).
 7. Repeat points 4 through 6 until a convergence of 5 meV/atom achieved.
 
-TIP: You can modify the [bash script](../files/script.sh) provided in this repository to automate this process or write your own script in any scripting language.
+TIP: You can modify the [bash script](../../files/script.sh) provided in this repository to automate this process or write your own script in any scripting language.
 
 [BACK TO INDEX](../README.md)
