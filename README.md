@@ -21,9 +21,6 @@ NOTE: If you are running this tutorial on a laptop, beware that some manufacture
  - [Exercise 2](2_lattice_param_bulk_modulus/README.md): Determination of the equilibrium lattice length and bulk modulus
  - [Exercise 3](3_elastic_constants/README.md): Determination of the elastic constants
 
-6. [Lattice parameter](6_mechanical_properties_lattice_param/README.md)
-7. [Elastic constants](7_mechanical_properties_elastic_constants/README.md)
-
 ## Bibliography
 1. P. Giannozzi, S. Baroni, N. Bonini, M. Calandra, R. Car, C. Cavazzoni, D. Ceresoli, G. L. Chiarotti, M. Cococcioni, I. Dabo, et al., Journal of physics: Condensed matter 21, 395502 (2009).
 2. P. Giannozzi, O. Andreussi, T. Brumme, O. Bunau, M. B. Nardelli, M. Calandra, R. Car, C. Cavazzoni, D. Ceresoli, M. Cococcioni, et al., Journal of Physics: Condensed Matter 29, 465901 (2017).
