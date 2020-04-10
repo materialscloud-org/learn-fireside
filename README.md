@@ -1,21 +1,18 @@
 # learn-fireside
 
-This is a tutorial for Density Functional Theory(DFT) calculation using [Quantum ESPRESSO](https://www.quantum-espresso.org/)(QE)[1,2]
+This is a tutorial for density-functional theory (DFT) calculations using the open-source [Quantum ESPRESSO] distribution (https://www.quantum-espresso.org/)(QE)[1,2].
 
-In each subfolder you will find the required instruction to run the example exercise.  
-All the required input and pseudopotential files can be found under the ```files``` folder.
+In each subfolder you will find the required instructions to run the example exercise. All the required input and pseudopotential files can be found under the ```files``` folder.
 
-All codes required to run the examples are already installed within the provided virtual machine (VM).  
-The SSSP pseudopotentials (PPs) files can be acquired from [Materials Cloud](https://www.materialscloud.org/discover/sssp/table/efficiency#sssp-license).
-Other sites providing PPs are [pseudodojo](http://www.pseudo-dojo.org/) and [Quantum ESPRESSO website](https://www.quantum-espresso.org/pseudopotentials).  
-The input files required to run the calculations are provided within this repository.
+The SSSP pseudopotentials (PPs) files can be downloaded from the [Materials Cloud (https://www.materialscloud.org/discover/sssp/table/efficiency#sssp-license). Other sites providing PPs are [pseudodojo](http://www.pseudo-dojo.org/) and [Quantum ESPRESSO website](https://www.quantum-espresso.org/pseudopotentials). The input files required to run the calculations are provided within this repository.
+
+All codes required to run the examples are already installed in the Quantum Mobile (see below), a virtual machine (VM) that can run on any Windows, Mac, or Linux laptop/desktop. Both the codes and Quantum Mobile are open source. 
 
 # Using the Quantum Mobile Virtual Machine
 
-The setup of the VM requires you to download the latest [Quantum Mobile image](https://github.com/marvel-nccr/quantum-mobile/releases/) and VBox version 6.1.  
-In order to import the image inside VBox, please refer to [this documentation](https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html)
+The setup of the Quantum Mobile requires you to download the [Quantum Mobile image](https://github.com/marvel-nccr/quantum-mobile/releases/) (we use the v20.03.1 release) and the open-source Virtual Box (VBox) virtualizaton software.   In order to import the image inside VBox, please refer to [this documentation](https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html).
 
-NOTE: If you are running this tutorial on a laptop, beware that some manufacturers disable the Virtualization technology on a BIOS level. While the feature can be reactivated, we would advise against doing it yourself unless you know what you are doing.
+NOTE: If you are running this tutorial on a laptop, beware that some manufacturers disable the Virtualization technology at the BIOS level. This feature can be reactivated, but we would advise against doing it yourself unless you know exactly what you are doing, and it might be wiser to install Quantum ESPRESSO natively on your machine - for this, see instructions at https://www.quantum-espresso.org/Doc/user_guide.pdf
 
 # Exercises
 
