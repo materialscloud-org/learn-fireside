@@ -5,7 +5,7 @@ While an exact representation of the WFs would require an infinite number of PWs
 This subset is most commonly defined by applying a cutoff to the plane waves G-vector modulus, or respectively its associated energy.
 Effectively we are limiting our subset to all the PWs with G-vector within a sphere of radius G_cut from the origin.
 
-For a more complete description, please refer to the [handouts](../files/handouts.pdf) sec 1.5.1.
+For a more complete description, please refer to the [handouts](../../files/handouts.pdf) sec 1.5.1.
 
 ## Convergence test
 
