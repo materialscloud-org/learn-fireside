@@ -19,7 +19,7 @@ Please take note of a few differences from the previous exercises:
   ```cp -r ../files/pseudo/ .```
 3. Modify the input file to use the converged parameters you obtained in the previous section.
   As stated in the introduction, the convergence requirement on the kpoints will be lower since we are using a supercell.  
-  Also we suggest using a slightly reduced cutoff and/or increase the number of virtual cores assigned to the virtual machine see [handouts](../files/handouts.pdf) section 1.7, in order to be able to run this exercise in a reasonable time.
+  Also we suggest using a slightly reduced cutoff and/or increase the number of virtual cores assigned to the virtual machine see [handouts](../files/handout.pdf) section 1.7, in order to be able to run this exercise in a reasonable time.
 4. Run the code pw.x from terminal using the command  
   ```pw.x < Na.supercell.relax.in > Na.supercell.relax.out```
 5. Collect the total energy from the output file (It can be found close to the end, with a line starting with an exclamation mark)  

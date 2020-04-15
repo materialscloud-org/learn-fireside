@@ -6,7 +6,7 @@ In our case the k-space is discretized using a [Monkhorst-Pack grid](https://doi
 
 The question that we aim to answer with the following test is "how many points are enought to properly describe my system within a certain threshold?"
 
-For a more complete description, please refer to the [handouts](../../files/handouts.pdf) sec 1.5.2.
+For a more complete description, please refer to the [handouts](../../files/handout.pdf) sec 1.5.2.
 
 ## Convergence test
 

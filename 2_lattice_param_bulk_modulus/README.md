@@ -1,7 +1,7 @@
 # Equilibrium lattice parameter, bulk modulus and B': Birch-Murnhgan equation of state
 
 As you might've seen in the previous set of exercises, we are able to calculate the total energy of our system, with respect to various input parameter, one of which can be the lattice parameter and hence, the cell Volume.  
-We can demonstrate that and equations of state, such as the third order Birch-Murnhgan (see section 2.2 on the [handsout](../files/handouts.pdf)) for more details) ties these two quantities together and a fit of the computed data will give us information about the equilibrium cell volume(lattice parameter), the bulk modulus (B) and its first order derivative with respect to the pressure(B').  
+We can demonstrate that and equations of state, such as the third order Birch-Murnhgan (see section 2.2 on the [handsout](../files/handout.pdf)) for more details) ties these two quantities together and a fit of the computed data will give us information about the equilibrium cell volume(lattice parameter), the bulk modulus (B) and its first order derivative with respect to the pressure(B').  
 All this is performed by the post-processing code ```ev.x``` provided in Quantum ESPRESSO.
 
 ## Example exercise

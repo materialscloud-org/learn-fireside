@@ -11,7 +11,7 @@ You might rightfully ask: "Why compromise at all and not use extremely high valu
 You will notice while doing the exercises that an higher value of a convergence parameter will also result in an longer execution time of your code.
 Computational resources have a cost and most importantly are usually limited, hence you always want to aim to squeeze all the possible calculation out of them, while still obtaining physically relevant results.
 
-For more details on each approximation, refer to the documentation of each subsection and the [handouts](../files/handouts.pdf).
+For more details on each approximation, refer to the documentation of each subsection and the [handouts](../files/handout.pdf).
 
 # Exercises
 

@@ -2,7 +2,7 @@
 
 This is a tutorial for density-functional theory (DFT) calculations using the open-source [Quantum ESPRESSO distribution](https://www.quantum-espresso.org/) (QE)[1,2].
 
-In each subfolder you will find the required instructions to run the relevant exercise. Instructions (https://github.com/materialscloud-org/learn-fireside/blob/master/files/handouts.pdf) and all the input and pseudopotential files needed can be found in the ```files``` folder.
+In each subfolder you will find the required instructions to run the relevant exercise. [Instructions](files/handout.pdf) and all the input and pseudopotential files needed can be found in the ```files``` folder.
 
 For general calculations, SSSP pseudopotentials (PPs) files can be downloaded from the [Materials Cloud](https://www.materialscloud.org/discover/sssp/table/efficiency#sssp-license); other sites providing PPs are [pseudodojo](http://www.pseudo-dojo.org/) and the [Quantum ESPRESSO website](https://www.quantum-espresso.org/pseudopotentials).
 
