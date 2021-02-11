@@ -31,7 +31,8 @@ for ecut in $LISTECUT; do
       for a in $LISTA; do
 
       INPUT="NaCl.scf.a=$a.ecut=$ecut.k=$k.in"
-      OUTPUT="NaCl.scf.a=$a.ecut=$ecut.k=$k.out"
+      OUTPUT="NaCl.scf.a=$a.ecut=$ecut.k=$k.out"i
+      ecutdensity=$(( 8 * ecut ))
       echo 'Doing ecut, k, a: ' $ecut $k $a
       # Create new input file:
 cat > $OUT_DIR/$INPUT << EOF
@@ -50,6 +51,7 @@ cat > $OUT_DIR/$INPUT << EOF
          nat = 2
          ntyp = 2
          ecutwfc = $ecut
+         ecutrho = $ecutdensity
       /
       &electrons
          diagonalization = 'david'
