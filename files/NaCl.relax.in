@@ -1,7 +1,7 @@
 &control
    calculation = 'relax'
    restart_mode = 'from_scratch'
-   prefix = 'NaCl.supercell'
+   prefix = 'NaCl'
    tstress = .true.
    tprnfor = .true.
    pseudo_dir = './pseudo/'
