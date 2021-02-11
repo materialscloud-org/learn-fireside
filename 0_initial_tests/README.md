@@ -22,8 +22,7 @@ For all exercises we will assume that you have downloaded the repository and are
 2. Copy or link the pseudopotential files for Na and Cl inside a folder named ```pseudo``` in the same path of the input file  
   ```cp -r ../files/pseudo/ .```
 3. Run the code pw.x from terminal using the command  
-  ```pw.x < Na.scf.in > Na.scf.out```
-3. Run the code pw.x from terminal using the command ```pw.x < Na.scf.in > Na.scf.out```
+  ```pw.x < NaCl.scf.in > NaCl.scf.out```
 4. Inspect the output file using your preferred editor or command line tool (eg ```vim```, ```nano```, ```less```, ```cat```).  
   The output files are written in human readable form, so you can try to skim through it to see what information is available
 
