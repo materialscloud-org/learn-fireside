@@ -58,8 +58,8 @@ cat > $OUT_DIR/$INPUT << EOF
          conv_thr = 1.0d-8
       /
       ATOMIC_SPECIES
-          Na  22.990    Na.pbe.oncvpsp.UPF
-          Cl  35.446    Cl.pbe.oncvpsp.UPF
+          Na  22.990    na_pbe_v1.5.uspp.F.UPF
+          Cl  35.446    cl_pbe_v1.4.uspp.F.UPF
       ATOMIC_POSITIONS {alat} 
           Na 0.00 0.00 0.00
           Cl 0.50 0.00 0.00
