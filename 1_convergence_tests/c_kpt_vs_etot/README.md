@@ -23,7 +23,7 @@ In the following test we are going to observe how the total energy of the system
   ```pw.x < Na.scf.in > Na.scf.out```
 5. Collect the total energy from the output file (It can be found close to the end, with a line starting with an exclamation mark)
   As a tip, you can use ```grep ! *.out``` to quickly get all lines with an exclamation mark from all files ending in ```.out```
-6. Increase the size of the kpoint grid by steps of 2 (e.g.  2x2x2 -> 4x4x4 -> 8x8x8).
+6. Increase the size of the kpoint grid by steps of 2 (e.g.  2x2x2 -> 4x4x4 -> 6x6x6 -> 8x8x8).
 7. Repeat points 4 through 6 until a convergence of 5 meV/atom achieved.
 
 TIP: You can modify the [bash script](../../files/script.sh) provided in this repository to automate this process or write your own script in any scripting language.

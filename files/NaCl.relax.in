@@ -28,8 +28,8 @@ CELL_PARAMETERS {alat}
     0.00000 1.00000 0.00000
     0.00000 0.00000 1.00000
 ATOMIC_SPECIES
-    Na  22.990    na_pbe_v1.5.uspp.F.UPF
-    Cl  35.446    cl_pbe_v1.4.uspp.F.UPF
+    Na  22.990    na_pbesol_v1.5.uspp.F.UPF
+    Cl  35.446    cl_pbesol_v1.4.uspp.F.UPF
 ATOMIC_POSITIONS {alat} 
     Na 0.00 0.00 0.00
     Na 0.50 0.50 0.00
