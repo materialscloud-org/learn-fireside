@@ -17,7 +17,7 @@ In this case you could use a command such as ```tail -f OUTPUT_FILE_NAME``` to i
 
 For all exercises we will assume that you have downloaded the repository and are working in the respective folder for each exercise
 
-1. Copy the [provided input files](../files/NaCl.scf.in) into this folder  
+1. Copy the [provided input files](../files/) into this folder  
   ```cp ../files/NaCl.scf.in .```
 2. Copy or link the pseudopotential files for Na and Cl inside a folder named ```pseudo``` in the same path of the input file  
   ```cp -r ../files/pseudo/ .```
