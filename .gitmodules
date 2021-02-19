@@ -1,0 +1,3 @@
+[submodule "solutions/ase"]
+	path = solutions/ase
+	url = https://github.com/elinscott/ase_koopmans.git
