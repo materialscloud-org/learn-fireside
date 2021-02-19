@@ -12,12 +12,13 @@ import os
 import copy
 import numpy as np
 from scipy.optimize import curve_fit
-from ase.io.espresso import read_espresso_in, KEYS, units, read_espresso_out, Espresso, ibrav_to_cell, cell_to_ibrav
-from ase import Atoms
 import matplotlib.pyplot as plt
 import seaborn
+
 import sys
 sys.path.append('./ase/')
+from ase.io.espresso import read_espresso_in, KEYS, units, read_espresso_out, Espresso, ibrav_to_cell, cell_to_ibrav
+from ase import Atoms
 
 seaborn.set_style('darkgrid')
 seaborn.set_context('notebook')
@@ -410,7 +411,8 @@ class ElasticConstantsProblem(FittingProblem):
       ax.set_xlim([xmin, xmax])
 
       # Labelling the coefficients
-      text = '\n'.join([f'${k}$ = {v / units.Ry * units.Bohr**3:.4f} Ry/Bohr^3 = {v / units.GPa:.4f} GPa' for k, v in self.coefficients.items()])
+      text = '\n'.join([f'${k}$ = {v / units.Ry * units.Bohr**3:.4f} Ry/Bohr^3 = {v / units.GPa:.4f} GPa' for k, v in
+                        self.coefficients.items()])
       ax.text(0.95, 0.95, text, ha='right', va='top', transform=ax.transAxes)
 
       plt.tight_layout()
@@ -506,7 +508,8 @@ if __name__ == '__main__':
    exercise_1b.run()
 
    # Plot the result
-   exercise_1b.plot(xlabel='ecutwfc (Ry)', ylabel=r'$|\Delta f_z^\mathrm{' + exercise_1b.master_atoms[-1].symbol + '}|$ (Ry/Bohr)', filename='conv_forces_wrt_ecutwfc')
+   exercise_1b.plot(xlabel='ecutwfc (Ry)', ylabel=r'$|\Delta f_z^\mathrm{' + exercise_1b.master_atoms[-1].symbol
+                    + '}|$ (Ry/Bohr)', filename='conv_forces_wrt_ecutwfc')
 
    # Store the results
    CONVERGED_SETTINGS['ecutwfc'] = max([exercise_1a.conv_x, exercise_1b.conv_x]) 
@@ -514,8 +517,8 @@ if __name__ == '__main__':
 
    # Exercise 1c ######################################################################################################
    # Construct the problem
-   exercise_1c = ConvergenceProblem(label='exercise_1c', conv_wrt='kpts', x=[2, 4, 6, 8, 10, 12], conv_threshold=energy_tol,
-                           extract=extract_energy, from_scratch=from_scratch)
+   exercise_1c = ConvergenceProblem(label='exercise_1c', conv_wrt='kpts', x=[2, 4, 6, 8, 10, 12],
+                                    conv_threshold=energy_tol, extract=extract_energy, from_scratch=from_scratch)
    
    # Run the calculations
    exercise_1c.run()
@@ -525,8 +528,8 @@ if __name__ == '__main__':
    
    # Exercise 1d ######################################################################################################
    # Construct the problem
-   exercise_1d = ConvergenceProblem(label='exercise_1d', conv_wrt='kpts', x=[2, 4, 6, 8, 10, 12], conv_threshold=force_tol,
-                           extract=extract_forces, from_scratch=from_scratch)
+   exercise_1d = ConvergenceProblem(label='exercise_1d', conv_wrt='kpts', x=[2, 4, 6, 8, 10, 12],
+                                    conv_threshold=force_tol, extract=extract_forces, from_scratch=from_scratch)
 
    # displace the last atom
    displacement = np.zeros(exercise_1d.master_atoms.positions.shape)
@@ -537,15 +540,17 @@ if __name__ == '__main__':
    exercise_1d.run()
 
    # Plot the result
-   exercise_1d.plot(xlabel='k-point grid', ylabel=r'$|\Delta f_z^\mathrm{' + exercise_1d.master_atoms[-1].symbol + '}|$ (Ry/Bohr)', filename='conv_forces_wrt_kpts')
+   exercise_1d.plot(xlabel='k-point grid', ylabel=r'$|\Delta f_z^\mathrm{' + exercise_1d.master_atoms[-1].symbol
+                    + '}|$ (Ry/Bohr)', filename='conv_forces_wrt_kpts')
 
    # Update the converged parameters
    CONVERGED_SETTINGS['kpts'] = max([exercise_1c.conv_x, exercise_1d.conv_x])
 
    # Exercise 1e ######################################################################################################
    # Construct the problem
-   exercise_1e = FiniteDiffConvergenceProblem(label='exercise_1e', conv_wrt='ecutwfc', x=ecuts, conv_threshold=energy_tol,
-                           extract=extract_energy, from_scratch=from_scratch)
+   exercise_1e = FiniteDiffConvergenceProblem(label='exercise_1e', conv_wrt='ecutwfc', x=ecuts, 
+                                              conv_threshold=energy_tol, extract=extract_energy,
+                                              from_scratch=from_scratch)
 
    # Run the calculations
    exercise_1e.run()
@@ -561,7 +566,8 @@ if __name__ == '__main__':
    # Exercise 2a ######################################################################################################
    # Construct the problem
    v0 = exercise_1a.master_atoms.cell.volume
-   exercise_2a = ParabolicBulkModulusProblem(label='exercise_2a', x=v0*np.linspace(0.95, 1.05, 9), from_scratch=from_scratch)
+   exercise_2a = ParabolicBulkModulusProblem(label='exercise_2a', x=v0*np.linspace(0.95, 1.05, 9),
+                                             from_scratch=from_scratch)
 
    # Run the calculations
    exercise_2a.run()
