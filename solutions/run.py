@@ -551,7 +551,7 @@ if __name__ == '__main__':
    exercise_1e.run()
 
    # Plot the result
-   exercise_1e.plot(xlabel='ecutwfc', ylabel=r'$|\Delta E|$ (Ry/atom)', filename='conv_energydiff_wrt_ecutwfc')
+   exercise_1e.plot(xlabel='ecutwfc (Ry)', ylabel=r'$|\Delta E|$ (Ry/atom)', filename='conv_energydiff_wrt_ecutwfc')
 
    # Update the converged parameters
    if exercise_1e.conv_x > CONVERGED_SETTINGS['ecutwfc']:
