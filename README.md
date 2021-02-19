@@ -12,7 +12,25 @@ All codes required to run the examples are already installed in the Quantum Mobi
 
 The setup of the Quantum Mobile requires you to download the [Quantum Mobile image](https://github.com/marvel-nccr/quantum-mobile/releases/) (we use the v20.03.1 release) and the open-source Virtual Box (VBox) virtualizaton software.   In order to import the image inside VBox, please refer to [this documentation](https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html).
 
-NOTE: If you are running this tutorial on a laptop, beware that some manufacturers disable the Virtualization technology at the BIOS level. This feature can be reactivated, but we would advise against doing it yourself unless you know exactly what you are doing, and it might be wiser to install Quantum ESPRESSO natively on your machine - for this, [see instructions](https://www.quantum-espresso.org/Doc/user_guide.pdf)
+NOTE: If you are running this tutorial on a laptop, beware that some manufacturers disable the Virtualization technology at the BIOS level. This feature can be reactivated, but we would advise against doing it yourself unless you know exactly what you are doing, and it might be wiser to install Quantum ESPRESSO natively on your machine as follows:
+
+### Linux
+Install Quantum ESPRESSO via the command `sudo apt-get install quantum-espresso`
+
+### Windows 10
+1. If you don't have the Fall Update to Windows 10, turn on developer mode (Settings > Update & Security > For Developers and select “Developer mode”)
+2. Enable the Windows Subsystem for Linux (Control Panel > Programs > Turn Windows Feature On or Off > Tick "Windows Subsystem for Linux")
+3. Reboot
+4. Install [Ubuntu](https://www.microsoft.com/store/productId/9NBLGGH4MSV6) from the Microsoft Store
+5. Launch the app "Ubuntu"
+6. Create a username and password
+7. Install Quantum ESPRESSO by entering the commands `sudo apt-get update` and then `sudo apt-get install quantum-espresso`
+
+Note that if you want to access files on your Windows machine from within the Ubuntu shell they can be found at `/mnt/c/`
+
+### MacOS
+1. Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
+2. Use conda to install [QE6.5](https://anaconda.org/mattchan-tencent/quantum-espresso)
 
 # Exercises
 
