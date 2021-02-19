@@ -1,0 +1,129 @@
+\documentclass[xcolor=table]{beamer}
+\usetheme{Madrid}
+\beamertemplatenavigationsymbolsempty
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{helvet}
+
+\definecolor{darkblue}{HTML}{315472}
+\setbeamercolor{frametitle}{bg=darkblue,fg=white}
+\setbeamercolor*{author in head/foot}{bg=darkblue}
+\setbeamercolor*{logo in head/foot}{bg=darkblue,fg=white}
+\setbeamercolor*{title in head/foot}{bg=darkblue,fg=white}
+\setbeamercolor*{date in head/foot}{bg=darkblue,fg=white}
+\setbeamercolor{title}{bg=darkblue}
+\setbeamercolor{footline}{bg=darkblue}
+\setbeamercolor{caption name}{fg=darkblue}
+
+\setbeamertemplate{frametitle}
+{
+  \leavevmode%
+  \vspace{-20pt}
+  \begin{beamercolorbox}[wd=\paperwidth,ht=1cm]{frametitle}
+    \hspace{0.115em}
+    \vphantom{P/p} \bf \insertframetitle \vspace{0.2cm}
+  \end{beamercolorbox}%
+}
+\setbeamertemplate{title page}
+{
+  \vspace{-4.1ex}%
+  \noindent\begin{tcolorbox}[enhanced,watermark graphics=EPFL-vue-aerienne-1536x864.jpg, width=\paperwidth, height=0.5\paperwidth, watermark zoom=1.2, grow to left by=0.035\paperwidth]
+  \vspace{0.1ex}
+  \begin{minipage}{\textwidth}
+   \begin{flushright}
+   \includegraphics[height=0.05\textheight]{/home/elinscott/Pictures/epfl_logos/white_cropped.eps}
+  \end{flushright}   
+  \end{minipage}
+  \end{tcolorbox}
+
+  \inserttitle
+
+  \vspace{1ex}
+  \footnotesize \insertauthor
+
+  \tiny \insertdate    
+  %  \end{flushright}
+
+	
+}
+%\setbeamerfont{frametitle}{series=\bfseries}
+\setbeamertemplate{footline}{}
+
+
+% Title slide %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \title[Beamer Intro]{\noindent Strongly correlated biological systems\\\Large DFT and beyond}
+\title{\noindent\Large\textbf{Solutions}\\
+\footnotesize\textbf{Convergence of energy and forces, calculating bulk modulus, and elastic constants of NaCl}}
+\author{Edward Linscott}
+\date{Quantum Espresso Workshop, Virtual Winterschool in Chemistry, 19 Feb 2021}
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Exercise 1: convergence}
+  Total energy with respect to energy cutoff
+  \begin{center}
+    \includegraphics[height=0.8\textheight]{../exercise_1a/conv_energy_wrt_ecutwfc.pdf}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Exercise 1: convergence}
+  Forces with respect to energy cutoff
+  \begin{center}
+    \includegraphics[height=0.8\textheight]{../exercise_1b/conv_forces_wrt_ecutwfc.pdf}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Exercise 1: convergence}
+  Energy with respect to k-point grid
+  \begin{center}
+    \includegraphics[height=0.8\textheight]{../exercise_1c/conv_energy_wrt_kpts.pdf}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Exercise 1: convergence}
+  Forces with respect to k-point grid
+  \begin{center}
+    \includegraphics[height=0.8\textheight]{../exercise_1d/conv_forces_wrt_kpts.pdf}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Exercise 1: convergence}
+  Energy differences with respect to energy cutoff
+  \begin{center}
+    \includegraphics[height=0.8\textheight]{../exercise_1e/conv_energydiff_wrt_ecutwfc.pdf}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Exercise 2: calculating the bulk modulus}
+  Parabolic fit
+  \begin{center}
+    \includegraphics[height=0.8\textheight]{../exercise_2a/fit_parabolic_bulkmodulus.pdf}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Exercise 2: calculating the bulk modulus}
+  Birch Murnaghan fit
+  \begin{center}
+    \includegraphics[height=0.8\textheight]{../exercise_2b/fit_birchmurnaghan_bulkmodulus.pdf}
+  \end{center}
+\end{frame}
+
+% \begin{frame}{Exercise 3: elastic constants}
+%   Orthorhombic distortion
+%   \begin{center}
+%     \includegraphics[height=0.8\textheight]{../exercise_3a_c11c12/fit_parabolic_c11_c12.pdf}
+%   \end{center}
+% \end{frame}
+% 
+% \begin{frame}{Exercise 3: elastic constants}
+%   Monoclinic distortion
+%   \begin{center}
+%     \includegraphics[height=0.8\textheight]{../exercise_3a_c44/fit_parabolic_c44.pdf}
+%   \end{center}
+% \end{frame}
+
+\end{document}
