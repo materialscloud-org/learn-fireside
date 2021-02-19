@@ -31,7 +31,7 @@ for ecut in $LISTECUT; do
       for a in $LISTA; do
 
       INPUT="NaCl.scf.a=$a.ecut=$ecut.k=$k.in"
-      OUTPUT="NaCl.scf.a=$a.ecut=$ecut.k=$k.out"i
+      OUTPUT="NaCl.scf.a=$a.ecut=$ecut.k=$k.out"
       ecutdensity=$(( 8 * ecut ))
       echo 'Doing ecut, k, a: ' $ecut $k $a
       # Create new input file:

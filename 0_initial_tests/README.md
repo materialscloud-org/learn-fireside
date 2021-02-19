@@ -15,9 +15,9 @@ In this case you could use a command such as ```tail -f OUTPUT_FILE_NAME``` to i
 
 ## Example exercise
 
-For all exercises we will assume that you have downloaded the repository and are working in the respective folder for each exercise
+For all exercises we will assume that you have downloaded the repository "learn-fireside" and are working in the respective folder for each exercise. If you have not donwloaded the repository yet, then go to the main page (https://github.com/materialscloud-org/learn-fireside) and click the green "Code" button to download the zipped file. Then move this zipped file from "Downloads" to Desktop/SHARED in the Virtual Machine. For more instructions see Sec. 1.1 in the handout.pdf (https://github.com/materialscloud-org/learn-fireside/blob/master/files/handout.pdf).
 
-1. Copy the [provided input files](../files/NaCl.scf.in) into this folder  
+1. Copy the [provided input files](../files/) into this folder  
   ```cp ../files/NaCl.scf.in .```
 2. Copy or link the pseudopotential files for Na and Cl inside a folder named ```pseudo``` in the same path of the input file  
   ```cp -r ../files/pseudo/ .```
